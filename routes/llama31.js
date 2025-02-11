@@ -41,8 +41,9 @@ module.exports.onAPI = async (req, res) => {
             markdown: false,
             stream: false
         });
+        const message = messages
 
-        res.json({ response });
+        res.json({ response, message });
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
