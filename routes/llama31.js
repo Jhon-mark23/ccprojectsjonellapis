@@ -36,14 +36,14 @@ module.exports.onAPI = async (req, res) => {
     messages.push({ role: "user", content: q });
 
     try {
-        const response = await llama({
+         await llama({
             messages,
             markdown: false,
             stream: false
         });
-        const message = messages
+       // const message = messages
 
-        res.json({ response, message });
+        res.json({ messages });
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
