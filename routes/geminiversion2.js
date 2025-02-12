@@ -2,11 +2,8 @@ const axios = require('axios');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const apiKeys = [
-  "AIzaSyBAEiDoFt0no4m_rvuWnAdqj8TzPPSoESs",
-  "AIzaSyAgZgBukaiCxWlm-P7zo9tmOM9499BsJp4", 
-  "AIzaSyArWBkp8T1izTH5Gfbgk5DFfBILkwoBAnc",
-  "AIzaSyDDI6Uaond8rN4o4-iDOwKeWEaqq_Srl3Q",
-  "AIzaSyDOYoqSMxnoL-JtCdtOWhfaS6swm2xC7TA"
+  "AIzaSyC5n8Fr6Xq722k0jkrRM0emqSQk_4s_C-o",
+  "AIzaSyD5CCNspQlYuqIR2t1BggzEFG0jmTThino"
 ];
 
 const API_KEY = apiKeys[Math.floor(Math.random() * apiKeys.length)];
